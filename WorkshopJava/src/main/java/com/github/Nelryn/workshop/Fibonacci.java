@@ -8,14 +8,16 @@ public class Fibonacci {
     public static void main(String[] args) {
         if (args.length == 1)
             max = Integer.parseInt(args[0]);
+        computeIt();
     }
 
     public static void computeIt() {
         int swap = nb2;
         for (int i = 1; i < max; i++) {
-            swap = nb2;+2
+            swap = nb2;
             nb2 = nb1 + nb2;
             nb1 = swap;
         }
+        System.out.println("Iterative: " + nb2);
     }
 }
